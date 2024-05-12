@@ -24,7 +24,7 @@ function App() {
             <Route path="/" element={<Menu/>}>
               <Route index element={<Home/>}/>
               <Route path="/otherpage" element={<OtherPage/>}/>
-                <Route path="/params/:id" element={<PageWithData/>}/>
+              <Route path="/params/:id" element={<PageWithData/>}/>
               <Route path={"*"} element={<NotFound/>}/>
                 {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
